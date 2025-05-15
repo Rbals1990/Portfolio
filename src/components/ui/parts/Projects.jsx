@@ -37,15 +37,21 @@ export default function Projects() {
         <Card.Root
           maxW={"xs"}
           maxH={"lg"}
+          minH="520px"
           bg="gray.800"
           boxShadow={"md"}
           transition="all 0.3s ease-in-out"
           _hover={{ transform: "scale(1.05)", boxShadow: "xl" }}
         >
-          <Image src="/recipeApp.png" w={"100%"} objectFit={"cover"} />
-          <CardBody>
+          <Image
+            src="/timesheet.png"
+            w={"100%"}
+            h={"250px"}
+            objectFit={"cover"}
+          />
+          <CardBody display={"flex"} flexDirection={"column"}>
             <Card.Title textAlign={"center"} color={"teal.500"}>
-              Recipe app (Frond-end)
+              Workhour registration App (Fullstack)
             </Card.Title>
             <Card.Description>
               <Text
@@ -57,23 +63,26 @@ export default function Projects() {
                 color={"white"}
                 borderRadius={"md"}
               >
-                For this project i used React, Chakra and Javascript to make the
-                front end of a recipe webapp. users could search and filter for
-                recipes. This app made use of a local Json database.
+                In this project I used TypeScript, React and Javascript to
+                create a fully funtional fullstack webapp. In this app the user
+                can register the amount of weekly worked hours and share this.
+                This app is hosted via Netlify and Render, try it out!
               </Text>
-              <Button
-                as={"a"}
-                href="https://github.com/Rbals1990/react-basic-project"
-                target={"_blank"}
-                rel="noopener noreferrer"
-                variant={"solid"}
-                _hover={{ bg: "teal.500" }}
-                display={"flex"}
-                justifyContent={"center"}
-                mt={2}
-              >
-                View Project
-              </Button>
+              <Box mt={"auto"} pt={4}>
+                <Button
+                  as={"a"}
+                  href="https://registertimesheet.netlify.app/"
+                  target={"_blank"}
+                  rel="noopener noreferrer"
+                  variant={"solid"}
+                  _hover={{ bg: "teal.500" }}
+                  display={"flex"}
+                  justifyContent={"center"}
+                  mt={2}
+                >
+                  View Project
+                </Button>
+              </Box>
             </Card.Description>
           </CardBody>
           <Card.Footer></Card.Footer>
@@ -82,13 +91,19 @@ export default function Projects() {
         <Card.Root
           maxW={"xs"}
           maxH={"lg"}
+          minH="520px"
           bg="gray.800"
           boxShadow={"md"}
           transition="all 0.3s ease-in-out"
           _hover={{ transform: "scale(1.05)", boxShadow: "xl" }}
         >
-          <Image src="/BookingApi.png" w={"100%"} objectFit={"cover"} />
-          <CardBody>
+          <Image
+            src="/BookingApi.png"
+            w={"100%"}
+            h={"250px"}
+            objectFit={"cover"}
+          />
+          <CardBody display={"flex"} flexDirection={"column"}>
             <Card.Title textAlign={"center"} color={"teal.500"}>
               Booking API (Back-end)
             </Card.Title>
@@ -106,19 +121,21 @@ export default function Projects() {
                 app. Using Node.js, Express, Sentry, Prisma and JWT I created
                 the routes, middlewares and database for a fully functional API.
               </Text>
-              <Button
-                as={"a"}
-                href="https://github.com/Rbals1990/backendfinalproject"
-                target={"_blank"}
-                rel="noopener noreferrer"
-                variant={"solid"}
-                _hover={{ bg: "teal.500" }}
-                display={"flex"}
-                justifyContent={"center"}
-                mt={5}
-              >
-                View Project
-              </Button>
+              <Box mt={"auto"} pt={4}>
+                <Button
+                  as={"a"}
+                  href="https://github.com/Rbals1990/backendfinalproject"
+                  target={"_blank"}
+                  rel="noopener noreferrer"
+                  variant={"solid"}
+                  _hover={{ bg: "teal.500" }}
+                  display={"flex"}
+                  justifyContent={"center"}
+                  mt={5}
+                >
+                  View Project
+                </Button>
+              </Box>
             </Card.Description>
           </CardBody>
           <Card.Footer></Card.Footer>
@@ -127,6 +144,7 @@ export default function Projects() {
         <Card.Root
           maxW={"xs"}
           maxH={"lg"}
+          minH="520px"
           bg="gray.800"
           boxShadow={"md"}
           transition="all 0.3s ease-in-out"
@@ -135,15 +153,13 @@ export default function Projects() {
           <Image
             src="/eventApp.png"
             w={"100%"}
-            h={"50%"}
+            h={"250px"}
             objectFit={"cover"}
             objectPosition={"center"}
-            mt={10}
-            mb={4}
           />
-          <CardBody>
+          <CardBody display={"flex"} flexDirection={"column"}>
             <Card.Title textAlign={"center"} color={"teal.500"} mt={8}>
-              Event Manager app
+              Event Manager app (Frond-end)
             </Card.Title>
             <Card.Description>
               <Text
@@ -160,19 +176,21 @@ export default function Projects() {
                 delete events on the web app. It uses a local Json database. For
                 this project I used React, Javascript, HTML and CSS.
               </Text>
-              <Button
-                as={"a"}
-                href="https://github.com/Rbals1990/react-advanced-project"
-                target={"_blank"}
-                rel="noopener noreferrer"
-                variant={"solid"}
-                _hover={{ bg: "teal.500" }}
-                display={"flex"}
-                justifyContent={"center"}
-                mt={3}
-              >
-                View Project
-              </Button>
+              <Box mt={"auto"} pt={4}>
+                <Button
+                  as={"a"}
+                  href="https://github.com/Rbals1990/react-advanced-project"
+                  target={"_blank"}
+                  rel="noopener noreferrer"
+                  variant={"solid"}
+                  _hover={{ bg: "teal.500" }}
+                  display={"flex"}
+                  justifyContent={"center"}
+                  mt={3}
+                >
+                  View Project
+                </Button>
+              </Box>
             </Card.Description>
           </CardBody>
           <Card.Footer></Card.Footer>

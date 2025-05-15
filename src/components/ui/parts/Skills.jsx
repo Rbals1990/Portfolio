@@ -44,6 +44,10 @@ export default function Skills() {
           alt="The logo icon for JavaScript"
         />
         <Skill
+          source="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg"
+          alt="The logo icon for TypeScript"
+        />
+        <Skill
           source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
           alt="The logo icon for react"
         />

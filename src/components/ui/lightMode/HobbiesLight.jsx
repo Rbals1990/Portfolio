@@ -59,13 +59,19 @@ export default function ProjectsLight() {
         <Card.Root
           maxW={"xs"}
           maxH={"lg"}
+          minH="520px"
           bg="gray.300"
           boxShadow={"md"}
           transition="all 0.3s ease-in-out"
           _hover={{ transform: "scale(1.05)", boxShadow: "xl" }}
         >
-          <Image src="/concert.PNG" w={"100%"} objectFit={"cover"} />
-          <CardBody>
+          <Image
+            src="/concert.PNG"
+            w={"100%"}
+            h={"250px"}
+            objectFit={"cover"}
+          />
+          <CardBody display={"flex"} flexDirection={"column"}>
             <Card.Title textAlign={"center"} color={"orange.400"}>
               Goin to concerts
             </Card.Title>
@@ -84,19 +90,21 @@ export default function ProjectsLight() {
                 whenever we see an artist we like, we set up a concert date
                 night!
               </Text>
-              <Button
-                as={"a"}
-                href="https://open.spotify.com/user/rensvaniersel"
-                target={"_blank"}
-                rel="noopener noreferrer"
-                variant={"solid"}
-                _hover={{ bg: "orange.300" }}
-                display={"flex"}
-                justifyContent={"center"}
-                mt={2}
-              >
-                My Spotify
-              </Button>
+              <Box mt={"auto"} pt={4}>
+                <Button
+                  as={"a"}
+                  href="https://open.spotify.com/user/rensvaniersel"
+                  target={"_blank"}
+                  rel="noopener noreferrer"
+                  variant={"solid"}
+                  _hover={{ bg: "orange.300" }}
+                  display={"flex"}
+                  justifyContent={"center"}
+                  mt={2}
+                >
+                  My Spotify
+                </Button>
+              </Box>
             </Card.Description>
           </CardBody>
           <Card.Footer></Card.Footer>
@@ -105,13 +113,14 @@ export default function ProjectsLight() {
         <Card.Root
           maxW={"xs"}
           maxH={"lg"}
+          minH="520px"
           bg="gray.300"
           boxShadow={"md"}
           transition="all 0.3s ease-in-out"
           _hover={{ transform: "scale(1.05)", boxShadow: "xl" }}
         >
-          <Image src="/BBQ1.PNG" w={"100%"} objectFit={"cover"} />
-          <CardBody>
+          <Image src="/BBQ1.PNG" w={"100%"} h={"250px"} objectFit={"cover"} />
+          <CardBody display={"flex"} flexDirection={"column"}>
             <Card.Title textAlign={"center"} color={"orange.400"}>
               Bbq!
             </Card.Title>
@@ -129,19 +138,21 @@ export default function ProjectsLight() {
                 a good day for Barbecue. I've cooked a lot of dishes from pulled
                 pork to T-bone steak. Have any good recipes? Please share them!
               </Text>
-              <Button
-                as={"a"}
-                href="mailto:rensbals1990@gmail.com"
-                target={"_blank"}
-                rel="noopener noreferrer"
-                variant={"solid"}
-                _hover={{ bg: "orange.300" }}
-                display={"flex"}
-                justifyContent={"center"}
-                mt={2}
-              >
-                Share your recipe
-              </Button>
+              <Box mt={"auto"} pt={4}>
+                <Button
+                  as={"a"}
+                  href="mailto:rensbals1990@gmail.com"
+                  target={"_blank"}
+                  rel="noopener noreferrer"
+                  variant={"solid"}
+                  _hover={{ bg: "orange.300" }}
+                  display={"flex"}
+                  justifyContent={"center"}
+                  mt={2}
+                >
+                  Share your recipe
+                </Button>
+              </Box>
             </Card.Description>
           </CardBody>
           <Card.Footer></Card.Footer>
@@ -150,13 +161,19 @@ export default function ProjectsLight() {
         <Card.Root
           maxW={"xs"}
           maxH={"lg"}
+          minH="520px"
           bg="gray.300"
           boxShadow={"md"}
           transition="all 0.3s ease-in-out"
           _hover={{ transform: "scale(1.05)", boxShadow: "xl" }}
         >
-          <Image src="/IMG_3844.jpg" w={"100%"} objectFit={"cover"} />
-          <CardBody>
+          <Image
+            src="/IMG_3844.jpg"
+            w={"100%"}
+            h={"250px"}
+            objectFit={"cover"}
+          />
+          <CardBody display={"flex"} flexDirection={"column"}>
             <Card.Title textAlign={"center"} color={"orange.400"}>
               Spending quality time with my family
             </Card.Title>
@@ -173,21 +190,23 @@ export default function ProjectsLight() {
                 Besides music and Bbq, the things I enjoy most are the things I
                 do with my family.
               </Text>
-              <Button
-                onClick={handleClick}
-                variant="solid"
-                _hover={{ bg: "orange.300" }}
-                display="flex"
-                justifyContent="center"
-                mt={2}
-                style={{
-                  transform: `translate(${jumpOffset.x}px, ${jumpOffset.y}px)`,
-                  transition: "transform 0.3s ease",
-                  position: "relative",
-                }}
-              >
-                Click me? 🐰
-              </Button>
+              <Box mt={"auto"} pt={4}>
+                <Button
+                  onClick={handleClick}
+                  variant="solid"
+                  _hover={{ bg: "orange.300" }}
+                  display="flex"
+                  justifyContent="center"
+                  mt={2}
+                  style={{
+                    transform: `translate(${jumpOffset.x}px, ${jumpOffset.y}px)`,
+                    transition: "transform 0.3s ease",
+                    position: "relative",
+                  }}
+                >
+                  Click me? 🐰
+                </Button>
+              </Box>
             </Card.Description>
           </CardBody>
           <Card.Footer></Card.Footer>
